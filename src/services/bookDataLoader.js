@@ -2,7 +2,7 @@ import axios from "axios";
 import { LS_KEYS, LocalStorageService } from "./localStorage";
 
 const DATA_URL = {PATH : "/data-base/book.JSON",
-                  GIT_PATH: "https://artemkuzyk.github.io/example-react-app/book.JSON"};
+                  GIT_PATH: "https://artemkuzyk.github.io/example-react-app/data-base/book.JSON"};
 
 class BookData{
     static async set(path){
@@ -16,7 +16,7 @@ class BookData{
         // })
         .then((response) => {
             console.log(response)
-            console.log(response)
+            // console.log(response)
             return response.json()
         })
         .then((data) => Object.values(data))
