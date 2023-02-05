@@ -9,7 +9,11 @@ class BookData{
         return await axios
         // return fetch(DATA_URL.GIT_PATH)
         .get(DATA_URL.GIT_PATH)
-        .then((response) => response.data)
+        .then((response) => {
+            console.log(response)
+            console.log(response.data)
+            return response.data
+        })
         // .then((response) => response.json())
         .then((data) => Object.values(data))
         .then((bookObj) => Object.keys(bookObj[0]).map(el => bookObj[0][el]))
