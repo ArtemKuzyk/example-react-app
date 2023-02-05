@@ -30,7 +30,7 @@ function App() {
       <CartProvider value={{bookCartChoice : bookCartChoice, setBookCartChoice : (i) => setBookCartChoice(i)}}>
       <SpecificBookProvider value={{specificBook : specificBook, setSpecificBook : (i) => setSpecificBook(i)}}>
         <div className="App">
-          <div className="Example"> Ghbdsn </div>
+          {/* <div className="Example"> Ghbdsn </div> */}
           <ShopRoutes />
         </div>
       </SpecificBookProvider>
