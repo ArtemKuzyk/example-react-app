@@ -7,8 +7,8 @@ const DATA_URL = {PATH : "./book.JSON",
 class BookData{
     static async set(path){
         // return await axios
-        console.log(DATA_URL.PATH)
-        return fetch(DATA_URL.PATH)
+        console.log(DATA_URL.GIT_PATH)
+        return await fetch(DATA_URL.GIT_PATH)
         // .get(DATA_URL.GIT_PATH)
         // .then((response) => response.data)
         .then((response) => {
