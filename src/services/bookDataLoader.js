@@ -6,10 +6,10 @@ const DATA_URL = {PATH : "/data-base/book.JSON",
 
 class BookData{
     static async set(path){
-        return await axios
-        // return fetch(DATA_URL.GIT_PATH)
-        .get(DATA_URL.GIT_PATH)
-        .then((response) => response.data)
+        // return await axios
+        return fetch(DATA_URL.GIT_PATH)
+        // .get(DATA_URL.GIT_PATH)
+        // .then((response) => response.data)
         .then((response) => response.json())
         .then((data) => Object.values(data))
         .then((bookObj) => Object.keys(bookObj[0]).map(el => bookObj[0][el]))
