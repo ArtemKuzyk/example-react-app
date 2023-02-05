@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/example-react-app/static/css/main.b37bc847.css",
+    "main.css": "/example-react-app/static/css/main.4824bd05.css",
     "main.js": "/example-react-app/static/js/main.793b12f7.js",
     "static/js/787.e584e4fe.chunk.js": "/example-react-app/static/js/787.e584e4fe.chunk.js",
     "static/media/loupe.png": "/example-react-app/static/media/loupe.56b1c10342e1fac34d28.png",
@@ -8,12 +8,12 @@
     "static/media/imageNotFound.png": "/example-react-app/static/media/imageNotFound.298b98203c3825c61303.png",
     "static/media/cart.svg": "/example-react-app/static/media/cart.5a1c3c755c07e59db7d65be6bc8d8bfb.svg",
     "index.html": "/example-react-app/index.html",
-    "main.b37bc847.css.map": "/example-react-app/static/css/main.b37bc847.css.map",
+    "main.4824bd05.css.map": "/example-react-app/static/css/main.4824bd05.css.map",
     "main.793b12f7.js.map": "/example-react-app/static/js/main.793b12f7.js.map",
     "787.e584e4fe.chunk.js.map": "/example-react-app/static/js/787.e584e4fe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b37bc847.css",
+    "static/css/main.4824bd05.css",
     "static/js/main.793b12f7.js"
   ]
 }
