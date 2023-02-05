@@ -13,7 +13,8 @@ function App() {
   return (
     <HashRouter basename='/'>
       <div className="App">
-        <ShopRoutes />
+        {/* <ShopRoutes /> */}
+        <div className="Example"></div>
       </div>
     </HashRouter>
   );
