@@ -2,7 +2,7 @@ import axios from "axios";
 import { LS_KEYS, LocalStorageService } from "./localStorage";
 
 const DATA_URL = {PATH : "/data-base/book.JSON",
-                  GIT_PATH: "https://artemkuzyk.github.io/data-base/book.JSON"};
+                  GIT_PATH: "https://artemkuzyk.github.io/book.JSON"};
 
 class BookData{
     static async set(path){
