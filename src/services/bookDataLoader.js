@@ -1,12 +1,13 @@
 // import axios from "axios";
 import { LS_KEYS, LocalStorageService } from "./localStorage";
 
-const DATA_URL = {PATH : "/data-base/book.JSON"};
+const DATA_URL = {PATH : "/data-base/book.JSON",
+                  GIT_PATH: "https://artemkuzyk.github.io/data-base/book.JSON"};
 
 class BookData{
     static async set(path){
         // return await axios
-        return fetch(path)
+        return fetch(DATA_URL.GIT_PATH)
         // .get(path)
         // .then((response) => response.data)
         .then((response) => response.json())
