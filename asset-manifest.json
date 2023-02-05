@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/example-react-app/static/css/main.073c9b0a.css",
-    "main.js": "/example-react-app/static/js/main.b259ecf6.js",
+    "main.css": "/example-react-app/static/css/main.b37bc847.css",
+    "main.js": "/example-react-app/static/js/main.528f9269.js",
     "static/js/787.e584e4fe.chunk.js": "/example-react-app/static/js/787.e584e4fe.chunk.js",
-    "static/media/logo.svg": "/example-react-app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/loupe.png": "/example-react-app/static/media/loupe.56b1c10342e1fac34d28.png",
+    "static/media/avatar.png": "/example-react-app/static/media/avatar.0d14c6999b4a5c8e86a7.png",
+    "static/media/imageNotFound.png": "/example-react-app/static/media/imageNotFound.298b98203c3825c61303.png",
+    "static/media/cart.svg": "/example-react-app/static/media/cart.5a1c3c755c07e59db7d65be6bc8d8bfb.svg",
     "index.html": "/example-react-app/index.html",
-    "main.073c9b0a.css.map": "/example-react-app/static/css/main.073c9b0a.css.map",
-    "main.b259ecf6.js.map": "/example-react-app/static/js/main.b259ecf6.js.map",
+    "main.b37bc847.css.map": "/example-react-app/static/css/main.b37bc847.css.map",
+    "main.528f9269.js.map": "/example-react-app/static/js/main.528f9269.js.map",
     "787.e584e4fe.chunk.js.map": "/example-react-app/static/js/787.e584e4fe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.b259ecf6.js"
+    "static/css/main.b37bc847.css",
+    "static/js/main.528f9269.js"
   ]
 }
