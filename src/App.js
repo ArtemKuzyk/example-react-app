@@ -10,12 +10,33 @@ import { BookData, DATA_URL } from "./services/bookDataLoader";
 import ShopRoutes from "./components/shopRouter/ShopRoutes"
 
 function App() {
+
+  const [userName, setUserName] = useState(
+    LocalStorageService.get(LS_KEYS.USER) || ""
+  );
+  const [bookCartChoice, setBookCartChoice] = useState({});
+  const [specificBook, setSpecificBook] = useState(LocalStorageService.get(LS_KEYS.SPECIFIC_BOOK) || {});
+
+  const initialBookArray = LocalStorageService.get(LS_KEYS.BOOK_LIST) || BookData.set(DATA_URL.PATH);
+  
+  useEffect(() => {
+      if(userName) setBookCartChoice(LocalStorageService.get(LS_KEYS.CART_LIST)?.[userName] || {});
+  }, [userName])
+
   return (
     <HashRouter basename='/'>
-      <div className="App">
-        {/* <ShopRoutes /> */}
-        <div className="Example"></div>
-      </div>
+      <UserProvider value={{userName : userName, setUserName : (i) => setUserName(i)}}>
+      <BookProvider value={initialBookArray}>
+      <CartProvider value={{bookCartChoice : bookCartChoice, setBookCartChoice : (i) => setBookCartChoice(i)}}>
+      <SpecificBookProvider value={{specificBook : specificBook, setSpecificBook : (i) => setSpecificBook(i)}}>
+        <div className="App">
+          {/* <ShopRoutes /> */}
+          <div className="Example"></div>
+        </div>
+      </SpecificBookProvider>
+      </CartProvider>
+      </BookProvider>
+      </UserProvider>
     </HashRouter>
   );
 }
