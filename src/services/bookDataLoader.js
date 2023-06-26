@@ -5,7 +5,7 @@ const DATA_URL = {PATH : "/data-base/book.JSON",
 
 class BookData{
     static async set(path){
-        return fetch(DATA_URL.path)
+        return fetch(path)
         .then((response) => response.json())
         .then((data) => Object.values(data))
         .then((bookObj) => Object.keys(bookObj[0]).map(el => bookObj[0][el]))
