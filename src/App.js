@@ -17,7 +17,9 @@ function App() {
   const [bookCartChoice, setBookCartChoice] = useState({});
   const [specificBook, setSpecificBook] = useState(LocalStorageService.get(LS_KEYS.SPECIFIC_BOOK) || {});
 
-  const initialBookArray = LocalStorageService.get(LS_KEYS.BOOK_LIST) || BookData.set(DATA_URL.PATH);
+  // Local path
+  // const initialBookArray = LocalStorageService.get(LS_KEYS.BOOK_LIST) || BookData.set(DATA_URL.PATH);
+  const initialBookArray = LocalStorageService.get(LS_KEYS.BOOK_LIST) || BookData.set(DATA_URL.GIT_PATH);
   
   useEffect(() => {
       if(userName) setBookCartChoice(LocalStorageService.get(LS_KEYS.CART_LIST)?.[userName] || {});
